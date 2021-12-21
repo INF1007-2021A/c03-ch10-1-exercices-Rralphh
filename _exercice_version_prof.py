@@ -12,7 +12,7 @@ import scipy.integrate as integrate
 def linear_values() -> np.ndarray:
     return np.linspace(-1.3, 2.5, num=64)
 
-
+#print(linear_values())
 def coordinate_conversion(cartesian_coordinates: np.ndarray) -> np.ndarray:
     return np.array([(np.sqrt(c[0] ** 2 + c[1] ** 2), np.arctan2(c[1], c[0])) for c in cartesian_coordinates])
 
@@ -81,9 +81,9 @@ def integrate_and_plt():
 
 if __name__ == '__main__':
     # TODO: Appelez vos fonctions ici
-    print(linear_values())
-    print(coordinate_conversion(np.array([(0, 0), (10, 10), (2, -1)])))
-    print(find_closest_index(np.array([1, 3, 8, 10]), 9.5))
-    create_plot()
+    #print(linear_values())
+    #print(coordinate_conversion(np.array([(0, 0), (10, 10), (2, -1)])))
+    #print(find_closest_index(np.array([1, 3, 8, 10]), 9.5))
+    #create_plot()
     print(monte_carlo())
-    print(integrate_and_plt())
+    #print(integrate_and_plt())
